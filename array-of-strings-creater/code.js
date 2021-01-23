@@ -1,5 +1,23 @@
 const mainDiv = document.getElementById("main");
 
+class BlockButton {
+  constructor(text, id) {
+  this.text = text;
+  this.id = id;
+  }
+  createButton: () => {
+  let button = document.createElement("button");
+  button.className = "block";
+  button.id = this.id;
+  button.innerText = this.text;
+  
+  }
+  addListener: () => {
+  
+  }
+  }
+  
+
 let inputType = {
   style: "mouseover",
   change: () => {
