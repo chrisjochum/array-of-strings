@@ -1,0 +1,7 @@
+.block {
+  min-width: 30px;
+  min-height: 30px;
+  background-color: black;
+  border: none;
+  color: white;
+}
