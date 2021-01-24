@@ -12,8 +12,40 @@ class BlockButton {
   button.innerText = this.text;
   
   }
+  change: () => {
+  {
+  let button = document.getElementsByClassName("block")
+        if (button.innerText === "W") {
+          colButton.innerText = "E";
+          colButton.style.backgroundColor = "slategray";
+          colButton.style.color = "black";
+        } else if (colButton.innerText === "E") {
+          colButton.innerText = "C";
+          colButton.style.backgroundColor = "gold";
+        } else if (colButton.innerText === "C") {
+          colButton.innerText = "S";
+          colButton.style.backgroundColor = "purple";
+        } else if (colButton.innerText === "S") {
+          colButton.innerText = "F";
+          colButton.style.backgroundColor = "red";
+        } else if (colButton.innerText === "F") {
+          colButton.innerText = "A";
+          colButton.style.backgroundImage = "linear-gradient(red, yellow)";
+        } else if (colButton.innerText === "A") {
+          colButton.innerText = "N";
+          colButton.style.backgroundImage =
+            "linear-gradient(slategray, purple)";
+        } else {
+          colButton.innerText = "W";
+          colButton.style.backgroundImage = "";
+          colButton.style.backgroundColor = "black";
+          colButton.style.color = "white";
+        }
+      }
+  }
   addListener: () => {
-  
+  let button = document.getElementById(this.id);
+  button.addEventListener("click", this.change) {}
   }
   }
   
